@@ -1,38 +1,161 @@
-.App {
+body{
+  background-color: #EBEAEB;
+  font-family: sans-serif;
+}
+
+h1{
   text-align: center;
+  font-size: 1.8rem;
+  color: grey;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.search-box{
+  padding: 0.3rem;
+  border-radius: 5rem;
+  background-color: white;
+  border: 1px solid #0000003b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search button{
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: blue;
+  font-size: 1rem;
+}
+
+.search input{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border: 0;
+}
+
+.search input:focus{
+  outline: 0;
+  border: 0;
+}
+
+.add-note{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.add-note .form-box{
+  background-color: white;
+  padding: 1rem;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 0 2px 1px #00000039;
+}
+
+.add-note textarea{
+  width: 100%;
+  border: 0;
+  resize: none;
+}
+
+.add-note textarea:focus{
+  outline: 0;
+}
+
+.add-note .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add-note .footer .colors{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-note .footer .colors>div{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.add-note .footer .colors .pick{
+  border: 1px solid black;
+}
+
+.add-note .pink{
+  background-color: pink;
+}
+.add-note .purple{
+  background-color: purple;
+}
+.add-note .yellow{
+  background-color: yellow;
+}
+.add-note .blue{
+  background-color: turquoise;
+}
+.add-note .green{
+  background-color: green;
+}
+
+.add-note .footer .btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-note .footer button{
+  background-color: green;
+  padding: 0.6rem 1.2rem;
+  border: 0;
+  color:white;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.notes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 12rem;
+}
+
+.notes .note{
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+}
+
+.notes .pink{
+  background-color: pink;
+}
+.notes .purple{
+  background-color: purple;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.notes .yellow{
+  background-color: yellow;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notes .blue{
+  background-color: turquoise;
+}
+.notes .green{
+  background-color: green;
+  color: white;
 }
